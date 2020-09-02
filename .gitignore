@@ -1,0 +1,17 @@
+# Compiled class file
+*.class
+*.classpath
+*.project
+
+# Folders
+.metadata/
+*/target/
+*/bin/
+*/.settings/
+
+# Package Files #
+
+*.zip
+*.tar.gz
+*.rar
+
