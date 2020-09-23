@@ -13,9 +13,14 @@ public class TopicController {
 	
 	@Autowired
 	private TopicService topicService;
+	
+	@Autowired
+	TopicBean topicBean;
 
 	@RequestMapping("/topics")
 	public List<Topic> getTopics() {
+		topicBean.setVersion(topicBean.getVersion() + 1);
+		System.out.println("Topic Bean...." + topicBean.toString());
 		return topicService.getAllTopics();
 	}
 	
