@@ -1,5 +1,8 @@
 package com.dineshwork.service;
 
-public class TradeServiceI {
+public interface TradeServiceI {
 
+	public int addTrade(Trade trade) {
+		
+	}
 }
